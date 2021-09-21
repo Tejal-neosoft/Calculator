@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <h2>Calculator</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6  calc">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" name="calculator" id="calc" class="calcArea form-control">
+                        </div>
+                    </div>
+                    <div class="row button-lay">
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block  " onclick="num('1')">1</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('2')">2</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('3')">3</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-success btn-block " onclick="num('+')" >+</button>
+                        </div>
+                    </div>
+                    <div class="row button-lay">
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('4')">4</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('5')">5</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('6')">6</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-success btn-block " onclick="num('-')">-</button>
+                        </div>
+                    </div>
+                    <div class="row button-lay">
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('7')">7</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('8')">8</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('9')">9</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-success btn-block " onclick="num('*')">*</button>
+                        </div>
+                    </div>
+                    <div class="row button-lay">
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('.')">.</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('0')">0</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-primary btn-block " onclick="num('**')">^</button>
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <button class="btn btn-success btn-block " onclick="num('/')">/</button>
+                        </div>
+                    </div>
+                    <div class="row button-lay">
+                        <div class="col-sm-6 col-lg-6 ">
+                            <button class="btn btn-warning btn-block " onclick="clr()">Clear</button>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 ">
+                            <button class="btn btn-warning btn-block " onclick="calc()">=</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="history">
+                        <h3>HISTORY</h3>
+                        <p id="display"></p>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+    </main>
+ 
+    
+
+    <!-- Javascript src -->
+    <script src="logic.js"></script>
+</body>
+</html>
